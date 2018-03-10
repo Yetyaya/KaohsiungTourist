@@ -1,0 +1,331 @@
+$max_width: 1024px //960
+
+*
+  font-family: 微軟正黑體
+  box-sizing: border-box
+  position: relative
+  color: #333
+  word-break: break-word
+  // border: 1px solid #000
+
+html
+  // background-color: #EAEAEA
+  background-color: #333
+  width: 100%
+  height: 100%
+
+body
+  margin: 0px
+  width: $max_width
+  margin-left: auto
+  margin-right: auto
+  background-color: #F4F4F4
+  // border: 1px solid #f23
+  
+#map
+  width: 98%
+  height: 350px
+  margin-bottom: 30px
+  margin-left: auto
+  margin-right: auto
+  
+.header
+  height: 300px
+  background-image: url(../img/title.jpeg)
+  background-size: cover
+  background-repeat: no-repeat
+  background-position: 50% 25%
+  padding: 55px 
+  h1
+    color: #fff
+    letter-spacing: 3px
+    text-align: center
+  select
+    outline: none
+    width: 400px
+    font-size: 16px
+    padding: 5px 10px
+    left: 50%
+    transform: translateX(-50%)
+    border: 3px solid #fff
+    border-radius: 3px
+    background-color: rgba(#fff,0.9)
+    cursor: pointer
+    option
+      background-color: #eee
+      font-size: 16px
+      padding-top: 30px
+
+.content
+  padding: 50px
+  padding-top: 120px
+  padding-bottom: 35px
+  .topBtn
+    position: fixed
+    display: none
+    right: 8%
+    bottom: 70px
+    z-index: 2
+    img
+      width: 35px
+      box-shadow: 0px 0px 10px -3px #111
+  .regionBox
+    width: 80%
+    background-color: #fff
+    padding: 20px 30px
+    padding-bottom: 30px
+    border-radius: 7px
+    font-size: 0px
+    position: absolute
+    top: -40px
+    left: 50%
+    transform: translateX(-50%)
+    box-shadow: 0px 2px 8px -1px rgba(#999,0.7)
+    z-index: 1
+    h4
+      font-size: 16px
+      letter-spacing: 1px
+      margin: 0px
+      margin-bottom: 15px
+      text-align: center
+    button
+      width: 16%
+      font-size: 18px
+      padding: 5px 15px
+      border-radius: 5px
+      color: #fff
+      letter-spacing: 1px
+      cursor: pointer
+      outline: none
+      border: none
+    .region1
+      background-color: #809BCE
+      margin-right: 5%
+      &:hover
+        background-color: #8DA6D6
+        transform: translateY(1px)
+    .region2
+      background-color: #82BAD8
+      margin-right: 5%
+      &:hover
+        background-color: #87BFDD
+        transform: translateY(1px)
+    .region3
+      background-color: #B3CE80
+      margin-right: 5%
+      &:hover
+        background-color: #BCD68D
+        transform: translateY(1px)
+    .region4
+      background-color: #F4C573
+      margin-right: 5%
+      &:hover
+        background-color: #FFCD77
+        transform: translateY(1px)
+    .region5
+      background-color: #EAB9BC
+      &:hover
+        background-color: #F4C1C4
+        transform: translateY(1px)
+  hr
+    margin: 0px
+    border: none
+    border-top: 2px dashed #95B8D1
+  .icon1
+    width: 20px
+    height: 20px
+    background-color: #F4F4F4
+    border: 2px solid #95B8D1
+    border-radius: 50%
+    position: absolute
+    left: 50%
+    top: 492px
+    transform: translateX(-50%)
+  h2
+    text-align: center
+    letter-spacing: 1px
+    margin-top: 35px
+    margin-bottom: 30px
+  .noInfo
+    text-align: center
+    letter-spacing: lpx
+  .list
+    font-size: 0px
+    display: none
+    .localBox
+      width: 48%
+      margin-left: 1%
+      margin-right: 1%
+      margin-bottom: 25px
+      display: inline-block
+      padding: 20px
+      box-shadow: 0px 2px 8px -1px rgba(#999,0.7)
+      vertical-align: top
+      border-radius: 7px
+      overflow: hidden
+      .pic
+        width: 100%
+        height: 160px
+        position: absolute
+        top: 0px
+        left: 0px
+        overflow: hidden
+        .adjust
+          width: 100%
+          transform: translateY(-20%)
+      h3
+        font-size: 19px
+        margin: 0px
+        color: #fff
+        font-weight: normal
+        text-shadow: 1px 1px 8px #000
+        letter-spacing: 1px
+        line-height: 275px
+        vertical-align: bottom
+      .placeName
+        height: 160px
+        margin: -20px
+        margin-bottom: 10px
+        padding: 0px 20px
+        z-index: 1
+        &::after
+          content: ''
+          position: absolute
+          left: 0px
+          width: 100%
+          height: 100%
+          z-index: -1
+          transform: scaleY(-1)
+          background-image: linear-gradient(0deg,rgba(#000,0.1) 50%,rgba(#000,0.7) 120%)
+        span
+          font-size: 14px
+          color: #fff
+          position: absolute
+          right: 20px
+      li
+        font-size: 16px
+        margin: 0px
+        line-height: 25px
+      p
+        font-size: 14px
+        letter-spacing: 0.5px
+        font-weight: bold
+        margin: 0px
+        line-height: 27px
+        padding-left: 30px
+      .time
+        background-image: url(https://goo.gl/hJyoxL)
+        background-repeat: no-repeat       
+      .addr
+        background-image: url(https://goo.gl/f9bBmc)
+        background-repeat: no-repeat
+      .tel
+        background-image: url(https://goo.gl/nsB8Ve)
+        background-repeat: no-repeat
+      .free
+        background-image: url(https://goo.gl/5w9CDB)
+        background-repeat: no-repeat
+        position: absolute
+        right: 20px
+        bottom: 20px
+  .page
+    display: none
+    text-align: center
+    margin-top: 20px
+    button
+      outline: none
+      cursor: pointer
+      background-color: transparent
+      border: none
+      font-weight: bold
+      padding: 2px 5px
+      margin: 0px 2px
+      &:hover
+        color: #7DB3D1
+
+    #prevBtn
+      margin-right: 15px
+    #nextBtn
+      margin-left: 15px
+      
+// .page button[data-num="1"]
+//   color: #7DB3D1
+    
+.footer
+  background: linear-gradient(135deg,#0153BA 0%,#F0A2AC 100%)
+  text-align: center
+  padding: 20px
+  p
+    margin: 0px
+    line-height: 25px
+  .p1
+    color: #fff
+  .p2
+    color: #FFD084
+    
+@media (max-width: 1500px)
+  .content
+    .topBtn
+      right: 70px
+
+@media (max-width: 1050px)
+  body
+    width: 100%
+    .content
+      .topBtn
+        right: 30px
+        
+@media (max-width: 768px)
+  .content
+    .regionBox
+      h4
+        font-size: 18px
+      button
+        width: calc(92% / 5)
+        font-size: 18px
+        padding: 5px 5px
+      .region1,.region2,.region3,.region4
+        margin-right: 2%
+    .list
+      font-size: 0px
+      display: none
+      .localBox
+        width: 100%
+        margin-left: 0px
+        margin-right: 0px
+        margin-bottom: 30px
+        
+@media (max-width: 576px)
+  .header 
+    padding-left: 6%
+    padding-right: 6%
+    select
+      outline: none
+      width: 88%
+  .content
+    padding-left: 0px
+    padding-right: 0px
+    .regionBox
+      top: -80px
+    .list
+      .localBox
+        width: 90%
+        margin-left: 5%
+        margin-right: 5%
+        p
+          font-size: 16px
+
+@media (max-width: 480px)
+  .content
+    .regionBox
+    .list
+      .localBox
+        p
+          font-size: 16px
+        .free
+          position: relative
+          right: 0px
+          bottom: 0px
+    .page
+      padding: 0px 30px
+      line-height: 30px
